@@ -1,0 +1,80 @@
+.d1{background-color: cadetblue;}
+.d2{background-color: chartreuse;}
+.d3{background-color: darkgoldenrod;}
+.d4{background-color: darkgreen;}
+.d5{background-color: darkmagenta;}
+.d6{background-color: darkred;}
+
+body{
+    margin: 5px;
+    font-size: 3vw; /* O viewport width (vw) é uma medida responsiva, que sempre deve estar no body, significa que o tamanho da fonte será apenas 3% da largura, tanto faz se diminuir ou aumentar a janela, o tamanho da fonte será 3% da tela*/
+}
+
+header{
+    display: flex;
+    width: 44vw;
+    height: 15vh;/* O viewport height (vw) é uma medida responsiva, siginifica q a altura do objeto será de 15% da altura total*/
+    margin: 5px;
+}
+
+nav{
+    display: flex;
+    width: 44vw;
+    height: 15vh;
+    margin: 5px;
+}
+
+article{
+    display: flex;
+    width: 74vw;
+    height: 42vh;
+    margin: 5px;
+}
+
+section{
+    display: flex;
+    width: 74vw;
+    height: 20vh;
+    margin: 5px;
+}
+
+aside{
+    display: flex;
+    width: 14vw;
+    height: 62vh;
+    margin: 5px;
+}
+
+footer{
+    display: flex;
+    width: 89vw;
+    height: 15vh;
+    margin: 5px;
+}
+
+.flex{
+    display: flex; /*Os objetos(que estão dentro da class "flex") serão flex*/
+    flex-direction: row; /*O flex terá direção "row", ou seja, lado a lado */
+}
+
+main{ /*Para começar, o aside, article e o section ficará um ao lado do outro, depois eu manipulo somente article e o section para que fique um em baixo de outro e os dois ao lado do aside*/
+    display: flex; 
+    flex-direction: row;
+}
+
+.flex2{ /*Agora vamos deixar o article e o section um em baixo do outro*/
+    display: flex;
+    flex-direction: column; /*O flex terá direção "column", ou seja, um abaixo do outro */
+}
+
+/*Responsividade: Quando a largura for menor que 760px, executa o stilo dentro das chaves*/
+@media screen and (max-width: 760px) {
+    .flex{display: flex; flex-direction: column;}
+    main{display: flex; flex-direction: column;}
+    header{display: flex; width: 90vw; height: 15vh; margin: 5px;}
+    nav{display: flex; width: 90vw; height: 15vh; margin: 5px;}
+    article{display: flex; width: 90vw; height: 42vh; margin: 5px;}
+    section{display: flex; width: 90vw; margin: 5px;}
+    aside{display: flex; width: 90vw; height: 15vh; margin: 5px;}
+    footer{display: flex; width: 90vw; height: 15vh; margin: 5px;}
+}

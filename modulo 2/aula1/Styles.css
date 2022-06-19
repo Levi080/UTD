@@ -1,0 +1,36 @@
+body{
+ height: 100%; /*altura 100%, preenche o tamanho total da janela*/
+ margin: 0px 5px;
+ color: aliceblue; /*cor do texto*/
+ font-size: 1rem; /*tamanho da fonte, o uso do "rem" é responsivo*/
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(95,165,210);/*Cor de fundo. Esse "rgb" significa red, green, blue, ou seja, a combinação das mesmas são responsáveis pela origem de várias cores, e o número dentro do "()" é a porcentagem de cada, podendo chegar até 255 de cada.*/
+}
+
+main{
+    display: flex; /*Os objetos estão em display flex*/
+    flex-direction: row; /*Onde o Flex será "direction: row", ou seja, um ao lado do outro, em uma linha só*/
+}
+
+a{
+color: white;
+}
+
+fieldset{
+    border-radius: 5px; /*A borda do fieldfset será em formato de radio*/
+    border-color: black; /*define a cor dessa borda*/
+    box-shadow: 3px 5px rgba(0, 0, 0, 0.3); /*"box-shadow" adiciona uma sombra no objeto que no caso será o fieldset, o primeiro parâmetro é a espessura o segundo é o espalhamento, e o "a" no final do rgb significa que será uma cor opaca, o "0.3" define o grau da opacidade*/
+}
+
+#esquerda{
+ width: 40vw;  /*40% da janela*/
+}
+
+#direita{
+width: 60vw; /*60% da janela*/
+}
+
+#logo{
+    width: 290px;
+    height: auto; /*O height(altura) se ajusta automaticamente com o tamanho da width(largura) */
+}

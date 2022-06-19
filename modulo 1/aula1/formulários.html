@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset> <!--O Fieldset serve para colocar o conteúdo dentro de uma linha retangular ou como podemos dizer, uma "caixa". -->
+        <legend>Cadastro do Usuário</legend> <!--O legend adiciona uma legenda para o fieldset-->
+
+        <label for="nome_form">Nome:</label>
+        <input id="nome_form" type="text" required> <!--O required é uma verificação, o campo tem que estar preenchido se não fica vermelho.-->
+        <br>
+        <label for="=idade_form">Idade:</label>
+        <input id="idade_form" type="number" required>
+
+        <!--Se o name estiver igual o usuário só poderá selecionar um radio-->
+        <p>Linguagem de progamação favorita:</p>
+        <label><input type="radio" name="linguagem" value="JavaScript">JavaScript</label>
+        <label><input type="radio" name="linguagem" value="Python">Python</label>
+        <label><input type="radio" name="linguagem" value="Ruby">Ruby</label>
+        <label><input type="radio" name="linguagem" value="PHP">PHP</label>
+
+        <p>Aréa de interesse:</p>
+        <label><input type="checkbox" name="area">FrontEnd</label>
+        <label><input type="checkbox" name="area">BackAnd</label>
+        <label><input type="checkbox" name="area">FullStrack</label>
+        
+        <p><input type="submit" value="Enviar"></p> <!--O value é o texto que aparecerá no botão-->
+
+    </fieldset>
+    </form>
+    
+</body>
+</html>

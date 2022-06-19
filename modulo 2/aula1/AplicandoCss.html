@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css"> <!-- "./" entra na pasta, "../" volta uma pasta -->
+</head>
+
+<body>
+
+    <main>
+        <div id="esquerda">
+            <h1>Universidade do Trabalho Digital</h1>
+            <h2>Para mais detalhes acesse <a href="#">link</a></h2>
+            <img id="logo" src="../../imagens/logoUTD.jpg" alt="Logo da Universidade do Trabalho Digital">
+
+            <ul>
+                <!--Lista Desordenada-->
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>Javascript</li>
+            </ul>
+
+            <ol>
+                <!--Lista Ordenada com números-->
+                <li>Python</li>
+                <li>PHP</li>
+                <li>Java</li>
+                <li>Javascript</li>
+            </ol>
+        </div>
+
+        <div id="direita">
+            <fieldset>
+                <label for="nome_form">Nome:</label>
+                <input id="nome_form" type="text" required>
+                <!--O required é uma verificação, o campo tem que estar preenchido se não fica vermelho.-->
+                <br>
+                <label for="=idade_form">Idade:</label>
+                <input id="idade_form" type="number" required>
+                <br>
+                <label for="=endereco_form">Endereço:</label>
+                <input id="endereco_form" type="text" required>
+                <br>
+                <input type="submit" value="Cadastrar">
+            </fieldset>
+
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>
